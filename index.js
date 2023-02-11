@@ -17,7 +17,11 @@ if (hacker1.length > hacker2.length) {
 //iteration3
 console.log(hacker1.toUpperCase())
 
-let reversedHacker1 = hacker1.split("").reverse().join("");
+let reversedHacker1 = "";
+for (let i = hacker1.length - 1; i>= 0; i--) {
+  reversedHacker1 += hacker1[i];
+}
+
 console.log(reversedHacker1);
 
 if (hacker1 < hacker2) {
